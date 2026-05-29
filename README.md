@@ -118,40 +118,41 @@ AI Layer
 
 # Project Structure
 
+## 📂 Project Structure
+
+```text
 boardroom-ai/
-
+│
 ├── backend/
-
-│   ├── main.py
-
-│   ├── gemma_service.py
-
-│   ├── prompts.py
-
-│   └── requirements.txt
-
+│   ├── main.py               # FastAPI application and API endpoints
+│   ├── gemma_service.py      # Ollama + Gemma integration
+│   ├── prompts.py            # Boardroom simulation prompt template
+│   └── requirements.txt      # Python dependencies
 │
-
 ├── frontend/
-
+│   ├── public/
+│   │   ├── favicon.svg
+│   │   └── icons.svg
+│   │
 │   ├── src/
-
-│   │   ├── App.jsx
-
-│   │   ├── App.css
-
-│   │   └── index.css
-
+│   │   ├── assets/
+│   │   │   ├── hero.png
+│   │   │   ├── react.svg
+│   │   │   └── vite.svg
+│   │   │
+│   │   ├── App.jsx          # Main UI component
+│   │   ├── App.css          # Application styling
+│   │   ├── index.css        # Global styles
+│   │   └── main.jsx         # React entry point
+│   │
+│   ├── package.json         # Frontend dependencies
+│   ├── vite.config.js       # Vite configuration
+│   └── index.html           # Root HTML page
 │
-
-│   ├── package.json
-
-│   └── vite.config.js
-
-│
-
-└── README.md
-
+├── .gitignore               # Git ignore rules
+├── README.md                # Project documentation
+└── requirements.txt         # Optional root requirements
+```
 ---
 
 # Prerequisites
